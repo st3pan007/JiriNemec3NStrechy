@@ -197,7 +197,7 @@
         /* Mobile-specific hero styles */
         @media (max-width: 768px) {
             .hero {
-                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://images.pexels.com/photos/206172/pexels-photo-206172.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2');
+                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/02c66f20-6f32-481f-8ed0-82c727a81a00/public');
                 background-size: cover;
                 background-position: center;
                 background-attachment: scroll;
@@ -322,9 +322,9 @@
             padding: 25px;
             font-family: 'Bebas Neue', sans-serif;
             font-size: 1.8rem;
-            top: -40px;
-            right: -40px;
-            transform: rotate(10deg);
+            bottom: 20px;
+            right: 20px;
+            transform: rotate(0deg);
             box-shadow: 10px 10px 0 var(--dark);
         }
 
@@ -979,20 +979,68 @@
             width: 100%;
             height: 100%;
             border: none;
-            transform: rotate(-2deg) scale(1.1);
         }
 
         /* Footer */
         footer {
             background: var(--dark);
             color: var(--white);
-            padding: 40px;
-            text-align: center;
+            padding: 25px 40px;
         }
 
-        footer p {
-            opacity: 0.7;
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             font-size: 0.95rem;
+        }
+
+        .footer-left {
+            opacity: 0.8;
+        }
+
+        .footer-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            opacity: 0.8;
+        }
+
+        .footer-right a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--white);
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-right a:hover {
+            opacity: 1;
+        }
+
+        .footer-logo {
+            height: 25px;
+            filter: brightness(0) invert(1);
+            transition: all 0.3s ease;
+        }
+
+        .footer-right a:hover .footer-logo {
+            filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(255,255,255,0.5));
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .footer-left,
+            .footer-right {
+                width: 100%;
+            }
         }
 
         /* Mobile menu */
@@ -1145,6 +1193,7 @@
 
             .map-container {
                 height: 350px;
+                transform: none;
             }
 
             .testimonials::before {
@@ -1264,7 +1313,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-bg">
-            <img src="https://images.pexels.com/photos/206172/pexels-photo-206172.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2" alt="Střecha">
+            <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/02c66f20-6f32-481f-8ed0-82c727a81a00/public" alt="Střecha">
         </div>
         <div class="hero-content">
             <h1>
@@ -1301,7 +1350,7 @@
                 </p>
             </div>
             <div class="story-image">
-                <img src="https://images.pexels.com/photos/8817734/pexels-photo-8817734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Řemeslník při práci">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/86e6bbf2-60ab-4e32-caf6-b1add1e95600/public" alt="Řemeslník při práci">
                 <div class="floating-stat">18 LET ZKUŠENOSTÍ</div>
             </div>
         </div>
@@ -1315,7 +1364,7 @@
         </div>
         <div class="services-layout">
             <div class="service-card">
-                <img src="https://images.pexels.com/photos/1249610/pexels-photo-1249610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Tesařské práce">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/e177cea1-fa20-4ac7-ee49-8023c59e3a00/public" alt="Tesařské práce">
                 <div class="service-info">
                     <span class="service-number">01</span>
                     <h3 class="service-title">Tesařské práce</h3>
@@ -1326,7 +1375,7 @@
                 </div>
             </div>
             <div class="service-card">
-                <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Pokrývačské práce">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/509d09f2-7b98-41b2-c4cc-772722c6a300/public" alt="Pokrývačské práce">
                 <div class="service-info">
                     <span class="service-number">02</span>
                     <h3 class="service-title">Pokrývačské práce</h3>
@@ -1337,7 +1386,7 @@
                 </div>
             </div>
             <div class="service-card">
-                <img src="https://images.pexels.com/photos/2582992/pexels-photo-2582992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Klempířské práce">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/4c5e122b-8c91-4928-d0e9-a9ca3d7bf900/public" alt="Klempířské práce">
                 <div class="service-info">
                     <span class="service-number">03</span>
                     <h3 class="service-title">Klempířské práce</h3>
@@ -1360,129 +1409,136 @@
         <!-- Desktop Grid -->
         <div class="gallery-grid">
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/259593/pexels-photo-259593.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 1">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/02c66f20-6f32-481f-8ed0-82c727a81a00/public" alt="Realizace 1">
                 <div class="gallery-overlay">
-                    <h4>Moderní vila</h4>
+                    <h4>Rodinný dům s modrou střechou</h4>
                     <p>Jevíčko, 2024</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 2">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/86e6bbf2-60ab-4e32-caf6-b1add1e95600/public" alt="Realizace 2">
                 <div class="gallery-overlay">
-                    <h4>Rekonstrukce statku</h4>
+                    <h4>Rekonstrukce střechy RD</h4>
                     <p>Trnávka, 2023</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 3">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/e177cea1-fa20-4ac7-ee49-8023c59e3a00/public" alt="Realizace 3">
                 <div class="gallery-overlay">
-                    <h4>Rodinný dům</h4>
+                    <h4>Tesařské práce - krov</h4>
                     <p>Moravská Třebová, 2024</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/463734/pexels-photo-463734.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 4">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/509d09f2-7b98-41b2-c4cc-772722c6a300/public" alt="Realizace 4">
                 <div class="gallery-overlay">
-                    <h4>Plechová střecha</h4>
+                    <h4>Pokládka střešní krytiny</h4>
                     <p>Jevíčko, 2023</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 5">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/4c5e122b-8c91-4928-d0e9-a9ca3d7bf900/public" alt="Realizace 5">
                 <div class="gallery-overlay">
-                    <h4>Tradiční krytina</h4>
+                    <h4>Klempířské prvky</h4>
                     <p>Bezděčí, 2024</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/2079234/pexels-photo-2079234.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 6">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/4b0817db-bbbc-4637-f7cb-e306c4b7ba00/public" alt="Realizace 6">
                 <div class="gallery-overlay">
                     <h4>Novostavba RD</h4>
                     <p>Víska u Jevíčka, 2023</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 7">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/e5ba4be0-50c3-4d29-5167-dc2e085eb900/public" alt="Realizace 7">
                 <div class="gallery-overlay">
-                    <h4>Bytový dům</h4>
+                    <h4>Rodinný dům - nová střecha</h4>
                     <p>Moravská Třebová, 2024</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 8">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/97eccd76-d0e4-42e3-de4e-5c5dbde3ac00/public" alt="Realizace 8">
                 <div class="gallery-overlay">
-                    <h4>Šindelová střecha</h4>
+                    <h4>Kompletní rekonstrukce střechy</h4>
                     <p>Jevíčko, 2023</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 9">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/742e85bf-fe28-41fb-4227-7103c1501f00/public" alt="Realizace 9">
                 <div class="gallery-overlay">
-                    <h4>Historický objekt</h4>
+                    <h4>Střecha rodinného domu</h4>
                     <p>Trnávka, 2024</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/347151/pexels-photo-347151.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 10">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/efbe5c32-5aef-48d0-cb2d-351991121500/public" alt="Realizace 10">
                 <div class="gallery-overlay">
-                    <h4>Moderní bungalov</h4>
+                    <h4>Montáž střešních oken</h4>
                     <p>Bezděčí, 2023</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/417273/pexels-photo-417273.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 11">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/0e464dec-03dc-419e-cc00-e4d4f439af00/public" alt="Realizace 11">
                 <div class="gallery-overlay">
-                    <h4>Rekonstrukce krovu</h4>
+                    <h4>Plechová střecha RD</h4>
                     <p>Jevíčko, 2024</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/209266/pexels-photo-209266.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 12">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/83af9458-035f-4721-b51f-f8bb68d96d00/public" alt="Realizace 12">
                 <div class="gallery-overlay">
-                    <h4>Betonová krytina</h4>
+                    <h4>Rodinný dům po rekonstrukci</h4>
                     <p>Moravská Třebová, 2023</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 13">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/4f1d51d1-c319-4731-50b7-7f8b3520bb00/public" alt="Realizace 13">
                 <div class="gallery-overlay">
-                    <h4>Pasivní dům</h4>
+                    <h4>Nová střešní krytina</h4>
                     <p>Trnávka, 2024</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 14">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/ee744395-39ff-46e8-6142-983dc0174100/public" alt="Realizace 14">
                 <div class="gallery-overlay">
-                    <h4>Chalupa</h4>
+                    <h4>Rodinný dům - celková oprava</h4>
                     <p>Bezděčí, 2023</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 15">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/ee1d5335-bfcb-4219-46d5-c3543dd3a000/public" alt="Realizace 15">
                 <div class="gallery-overlay">
-                    <h4>Dvojdům</h4>
+                    <h4>Střecha s vikýři</h4>
                     <p>Jevíčko, 2024</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/53610/large-home-residential-house-architecture-53610.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 16">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/8d51a1f2-e945-4cd8-5135-014482abc100/public" alt="Realizace 16">
                 <div class="gallery-overlay">
-                    <h4>Vila s terasou</h4>
+                    <h4>Tradiční taškové krytiny</h4>
                     <p>Moravská Třebová, 2023</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/277667/pexels-photo-277667.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 17">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/71116716-1ec0-4068-ffb1-2aa2d87f6300/public" alt="Realizace 17">
                 <div class="gallery-overlay">
-                    <h4>Střecha garáže</h4>
+                    <h4>Rodinný dům - nové oplechování</h4>
                     <p>Trnávka, 2024</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 18">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/7c09013c-309e-4468-a7f5-c7db8adf9a00/public" alt="Realizace 18">
                 <div class="gallery-overlay">
-                    <h4>Kompletní rekonstrukce</h4>
+                    <h4>Kompletní střecha na klíč</h4>
                     <p>Jevíčko, 2023</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/18619710-3a12-472a-528b-700a6e8d2b00/public" alt="Realizace 19">
+                <div class="gallery-overlay">
+                    <h4>Rodinný dům - finální realizace</h4>
+                    <p>Bezděčí, 2024</p>
                 </div>
             </div>
         </div>
@@ -1501,129 +1557,136 @@
             </div>
             <div class="gallery-carousel-wrapper" id="carouselWrapper">
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/259593/pexels-photo-259593.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 1">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/02c66f20-6f32-481f-8ed0-82c727a81a00/public" alt="Realizace 1">
                     <div class="gallery-carousel-info">
-                        <h4>Moderní vila</h4>
+                        <h4>Rodinný dům s modrou střechou</h4>
                         <p>Jevíčko, 2024</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 2">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/86e6bbf2-60ab-4e32-caf6-b1add1e95600/public" alt="Realizace 2">
                     <div class="gallery-carousel-info">
-                        <h4>Rekonstrukce statku</h4>
+                        <h4>Rekonstrukce střechy RD</h4>
                         <p>Trnávka, 2023</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 3">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/e177cea1-fa20-4ac7-ee49-8023c59e3a00/public" alt="Realizace 3">
                     <div class="gallery-carousel-info">
-                        <h4>Rodinný dům</h4>
+                        <h4>Tesařské práce - krov</h4>
                         <p>Moravská Třebová, 2024</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/463734/pexels-photo-463734.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 4">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/509d09f2-7b98-41b2-c4cc-772722c6a300/public" alt="Realizace 4">
                     <div class="gallery-carousel-info">
-                        <h4>Plechová střecha</h4>
+                        <h4>Pokládka střešní krytiny</h4>
                         <p>Jevíčko, 2023</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 5">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/4c5e122b-8c91-4928-d0e9-a9ca3d7bf900/public" alt="Realizace 5">
                     <div class="gallery-carousel-info">
-                        <h4>Tradiční krytina</h4>
+                        <h4>Klempířské prvky</h4>
                         <p>Bezděčí, 2024</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/2079234/pexels-photo-2079234.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 6">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/4b0817db-bbbc-4637-f7cb-e306c4b7ba00/public" alt="Realizace 6">
                     <div class="gallery-carousel-info">
                         <h4>Novostavba RD</h4>
                         <p>Víska u Jevíčka, 2023</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 7">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/e5ba4be0-50c3-4d29-5167-dc2e085eb900/public" alt="Realizace 7">
                     <div class="gallery-carousel-info">
-                        <h4>Bytový dům</h4>
+                        <h4>Rodinný dům - nová střecha</h4>
                         <p>Moravská Třebová, 2024</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 8">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/97eccd76-d0e4-42e3-de4e-5c5dbde3ac00/public" alt="Realizace 8">
                     <div class="gallery-carousel-info">
-                        <h4>Šindelová střecha</h4>
+                        <h4>Kompletní rekonstrukce střechy</h4>
                         <p>Jevíčko, 2023</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 9">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/742e85bf-fe28-41fb-4227-7103c1501f00/public" alt="Realizace 9">
                     <div class="gallery-carousel-info">
-                        <h4>Historický objekt</h4>
+                        <h4>Střecha rodinného domu</h4>
                         <p>Trnávka, 2024</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/347151/pexels-photo-347151.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 10">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/efbe5c32-5aef-48d0-cb2d-351991121500/public" alt="Realizace 10">
                     <div class="gallery-carousel-info">
-                        <h4>Moderní bungalov</h4>
+                        <h4>Montáž střešních oken</h4>
                         <p>Bezděčí, 2023</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/417273/pexels-photo-417273.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 11">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/0e464dec-03dc-419e-cc00-e4d4f439af00/public" alt="Realizace 11">
                     <div class="gallery-carousel-info">
-                        <h4>Rekonstrukce krovu</h4>
+                        <h4>Plechová střecha RD</h4>
                         <p>Jevíčko, 2024</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/209266/pexels-photo-209266.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 12">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/83af9458-035f-4721-b51f-f8bb68d96d00/public" alt="Realizace 12">
                     <div class="gallery-carousel-info">
-                        <h4>Betonová krytina</h4>
+                        <h4>Rodinný dům po rekonstrukci</h4>
                         <p>Moravská Třebová, 2023</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 13">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/4f1d51d1-c319-4731-50b7-7f8b3520bb00/public" alt="Realizace 13">
                     <div class="gallery-carousel-info">
-                        <h4>Pasivní dům</h4>
+                        <h4>Nová střešní krytina</h4>
                         <p>Trnávka, 2024</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 14">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/ee744395-39ff-46e8-6142-983dc0174100/public" alt="Realizace 14">
                     <div class="gallery-carousel-info">
-                        <h4>Chalupa</h4>
+                        <h4>Rodinný dům - celková oprava</h4>
                         <p>Bezděčí, 2023</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 15">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/ee1d5335-bfcb-4219-46d5-c3543dd3a000/public" alt="Realizace 15">
                     <div class="gallery-carousel-info">
-                        <h4>Dvojdům</h4>
+                        <h4>Střecha s vikýři</h4>
                         <p>Jevíčko, 2024</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/53610/large-home-residential-house-architecture-53610.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 16">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/8d51a1f2-e945-4cd8-5135-014482abc100/public" alt="Realizace 16">
                     <div class="gallery-carousel-info">
-                        <h4>Vila s terasou</h4>
+                        <h4>Tradiční taškové krytiny</h4>
                         <p>Moravská Třebová, 2023</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/277667/pexels-photo-277667.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 17">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/71116716-1ec0-4068-ffb1-2aa2d87f6300/public" alt="Realizace 17">
                     <div class="gallery-carousel-info">
-                        <h4>Střecha garáže</h4>
+                        <h4>Rodinný dům - nové oplechování</h4>
                         <p>Trnávka, 2024</p>
                     </div>
                 </div>
                 <div class="gallery-carousel-item">
-                    <img src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Realizace 18">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/7c09013c-309e-4468-a7f5-c7db8adf9a00/public" alt="Realizace 18">
                     <div class="gallery-carousel-info">
-                        <h4>Kompletní rekonstrukce</h4>
+                        <h4>Kompletní střecha na klíč</h4>
                         <p>Jevíčko, 2023</p>
+                    </div>
+                </div>
+                <div class="gallery-carousel-item">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/18619710-3a12-472a-528b-700a6e8d2b00/public" alt="Realizace 19">
+                    <div class="gallery-carousel-info">
+                        <h4>Rodinný dům - finální realizace</h4>
+                        <p>Bezděčí, 2024</p>
                     </div>
                 </div>
             </div>
@@ -1778,7 +1841,17 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 3N Střechy s.r.o. | Všechna práva vyhrazena</p>
+        <div class="footer-content">
+            <div class="footer-left">
+                © 2025 3N Střechy s.r.o. | Všechna práva vyhrazena
+            </div>
+            <div class="footer-right">
+                <span>Webové stránky od</span>
+                <a href="https://www.mescon.cz/webove-stranky/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/40be5d28-47ca-4830-fcae-0a3ee9e60200/public" alt="MESCON" class="footer-logo">
+                </a>
+            </div>
+        </div>
     </footer>
 
     <script>
